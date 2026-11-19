@@ -1,0 +1,4 @@
+assets/js/vendor/
+assets/img/
+dist/
+package-lock.json

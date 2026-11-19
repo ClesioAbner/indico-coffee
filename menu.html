@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pt" class="js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu · Índico Coffee</title>
+    <meta
+      name="description"
+      content="Menu do Índico Coffee, em Maputo: cafés, dirty chai, chocolate quente, frappuccinos, pequeno-almoço, tostas, saladas e doces."
+    />
+    <meta name="theme-color" content="#0b3a2a" />
+    <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:site_name" content="Índico Coffee" />
+    <meta property="og:title" content="Menu · Índico Coffee" />
+    <meta property="og:image" content="assets/img/og-image.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Mrs+Saint+Delafield&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+
+    <script defer src="assets/js/vendor/motion.min.js"></script>
+    <script defer src="assets/js/core.js"></script>
+    <script defer src="assets/js/data/site.js"></script>
+    <script defer src="assets/js/data/menu.js"></script>
+    <script defer src="assets/js/modules/site-info.js"></script>
+    <script defer src="assets/js/modules/header.js"></script>
+    <script defer src="assets/js/modules/menu.js"></script>
+    <script defer src="assets/js/modules/animations.js"></script>
+  </head>
+  <body>
+    <svg width="0" height="0" class="visually-hidden" aria-hidden="true">
+      <symbol id="icon-arrow" viewBox="0 0 16 16">
+        <path
+          d="M3 8h10M9 4l4 4-4 4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path
+          d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24">
+        <path
+          d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="1.8" />
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+        <path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-paw" viewBox="0 0 24 24">
+        <circle cx="6" cy="10" r="2" fill="currentColor" />
+        <circle cx="9.5" cy="5.5" r="2" fill="currentColor" />
+        <circle cx="14.5" cy="5.5" r="2" fill="currentColor" />
+        <circle cx="18" cy="10" r="2" fill="currentColor" />
+        <path
+          fill="currentColor"
+          d="M12 11c-2.6 0-6 3.6-6 6.6 0 1.5 1.1 2.4 2.5 2.4 1.3 0 2.2-.8 3.5-.8s2.2.8 3.5.8c1.4 0 2.5-.9 2.5-2.4 0-3-3.4-6.6-6-6.6z"
+        />
+      </symbol>
+      <symbol id="icon-drop" viewBox="0 0 24 24">
+        <path
+          d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24">
+        <path
+          d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21.5l8.8-8.8a5 5 0 0 0 0-7.1z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41z"
+        />
+      </symbol>
+      <symbol id="icon-facebook" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M9.1 23.69v-7.98H6.63v-3.67H9.1v-1.58c0-4.09 1.85-5.98 5.86-5.98.4 0 .95.04 1.47.1.45.06.88.13 1.14.2v3.32l-.65-.03a26.8 26.8 0 0 0-.73-.01c-.71 0-1.26.1-1.68.31a1.69 1.69 0 0 0-.68.62c-.26.42-.37 1-.37 1.75v1.3h3.92l-.39 2.1-.29 1.57h-3.24v8.25C19.4 23.24 24 18.18 24 12.04 24 5.42 18.63.04 12 .04S0 5.42 0 12.04c0 5.63 3.87 10.35 9.1 11.65z"
+        />
+      </symbol>
+      <symbol id="icon-tiktok" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+        />
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.9" />
+        <circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.9" />
+        <circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" />
+      </symbol>
+    </svg>
+
+    <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+    <!-- Cabeçalho -->
+    <header class="site-header">
+      <a class="logo" href="index.html" aria-label="Índico Coffee, página inicial">
+        <img src="assets/img/brand/logo.svg" alt="Índico Coffee" width="72" height="44" />
+      </a>
+      <nav class="site-nav" aria-label="Principal">
+        <a href="index.html#sobre">Sobre nós</a>
+        <a href="menu.html" aria-current="page">Menu</a>
+        <a href="index.html#animais">Animais</a>
+        <a href="index.html#contactos">Contactos</a>
+      </nav>
+      <a class="btn btn--dark" href="tel:+258849596865" data-site-href="phone">
+        Ligar
+        <span class="btn__icon">
+          <svg><use href="#icon-arrow" /></svg>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+      </button>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+      <nav aria-label="Principal (telemóvel)">
+        <a href="index.html">Início</a>
+        <a href="index.html#sobre">Sobre nós</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#animais">Animais</a>
+        <a href="index.html#contactos">Contactos</a>
+      </nav>
+      <div class="mobile-nav__info">
+        <span data-site="city">Maputo, Moçambique</span>
+        <a href="tel:+258849596865" data-site-href="phone" data-site="phone">+258&nbsp;84&nbsp;959&nbsp;6865</a>
+        <a
+          href="https://wa.me/258849596865"
+          data-site-if="whatsapp"
+          data-site-href="whatsapp"
+          target="_blank"
+          rel="noopener"
+        >
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <main id="conteudo">
+      <section class="page-hero is-dark" aria-labelledby="menu-title">
+        <div class="page-hero__media"><img src="assets/img/extraction.jpg" alt="" width="1600" height="1600" /></div>
+        <div class="container">
+          <p class="eyebrow">Menu</p>
+          <div>
+            <h1 class="h1" id="menu-title">
+              <span class="line"><span>O nosso</span></span>
+              <span class="line"><span>menu.</span></span>
+            </h1>
+            <p class="script" data-script>Bom apetite.</p>
+          </div>
+          <p class="lead" data-reveal>
+            Cafés, bebidas frias, pequeno-almoço, tostas e doces. Tudo preparado no momento.
+          </p>
+        </div>
+      </section>
+
+      <!-- Categorias e itens gerados a partir de assets/js/data/menu.js -->
+      <nav class="menu-nav" aria-label="Categorias do menu">
+        <div class="container" data-menu-nav></div>
+      </nav>
+
+      <div class="container">
+        <div data-menu-full>
+          <noscript>
+            <p class="menu-footnote">Para ver o menu, ative o JavaScript ou ligue-nos para +258 84 959 6865.</p>
+          </noscript>
+        </div>
+        <p class="menu-footnote">
+          Preços em meticais (MT). Se tiver alguma alergia ou restrição alimentar, diga-nos quando fizer o pedido.
+        </p>
+      </div>
+
+      <section class="final-cta final-cta--compact" aria-labelledby="final-title">
+        <img src="assets/img/beans-dark.jpg" alt="" loading="lazy" width="1600" height="1060" />
+        <div class="container">
+          <h2 class="h-cta" id="final-title">
+            <span class="line"><span>Venha</span></span>
+            <span class="line"><span>provar.</span></span>
+          </h2>
+          <a class="btn" href="tel:+258849596865" data-site-href="phone" data-reveal>
+            Ligar
+            <span class="btn__icon">
+              <svg><use href="#icon-arrow" /></svg>
+            </span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <a class="logo" href="index.html" aria-label="Índico Coffee, página inicial">
+              <img src="assets/img/brand/logo.svg" alt="Índico Coffee" width="158" height="96" />
+            </a>
+            <p>Um café sem pressa, em Maputo.</p>
+            <ul class="social-links" aria-label="Redes sociais">
+              <li data-site-if="whatsapp">
+                <a
+                  class="social-link"
+                  href="https://wa.me/258849596865"
+                  data-site-href="whatsapp"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="WhatsApp"
+                >
+                  <svg aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+                </a>
+              </li>
+              <li data-site-if="instagram">
+                <a
+                  class="social-link"
+                  href="#"
+                  data-site-href="instagram"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram"
+                >
+                  <svg aria-hidden="true"><use href="#icon-instagram" /></svg>
+                </a>
+              </li>
+              <li data-site-if="facebook">
+                <a
+                  class="social-link"
+                  href="#"
+                  data-site-href="facebook"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Facebook"
+                >
+                  <svg aria-hidden="true"><use href="#icon-facebook" /></svg>
+                </a>
+              </li>
+              <li data-site-if="tiktok">
+                <a
+                  class="social-link"
+                  href="#"
+                  data-site-href="tiktok"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="TikTok"
+                >
+                  <svg aria-hidden="true"><use href="#icon-tiktok" /></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <nav aria-labelledby="footer-nav-title">
+            <h2 id="footer-nav-title">Navegação</h2>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="index.html#sobre">Sobre nós</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="index.html#animais">Animais</a></li>
+              <li><a href="index.html#perguntas">Perguntas frequentes</a></li>
+              <li><a href="index.html#contactos">Contactos</a></li>
+            </ul>
+          </nav>
+          <nav aria-labelledby="footer-menu-title">
+            <h2 id="footer-menu-title">Menu</h2>
+            <ul>
+              <li><a href="#cafes">Cafés</a></li>
+              <li><a href="#especiais">Especiais</a></li>
+              <li><a href="#frios">Frios</a></li>
+              <li><a href="#pequeno-almoco">Pequeno-almoço</a></li>
+              <li><a href="#doces">Doces</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h2>Contactos</h2>
+            <ul class="site-footer__contacts">
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="#icon-phone" /></svg>
+                <a href="tel:+258849596865" data-site-href="phone" data-site="phone">+258&nbsp;84&nbsp;959&nbsp;6865</a>
+              </li>
+              <li data-site-if="hours">
+                <svg class="icon" aria-hidden="true"><use href="#icon-clock" /></svg>
+                <span data-site="hours"></span>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="#icon-pin" /></svg>
+                <span>
+                  <span data-site-if="address">
+                    <span data-site="address"></span>
+                    ,
+                  </span>
+                  <span data-site="city">Maputo, Moçambique</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <span>
+            ©
+            <span data-year>2026</span>
+            Índico Coffee. Todos os direitos reservados.
+          </span>
+          <span>Desenvolvido por Eclesio Pembelane</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

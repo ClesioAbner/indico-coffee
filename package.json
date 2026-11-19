@@ -1,0 +1,25 @@
+{
+  "name": "indico-coffee",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page do Índico Coffee (Maputo). Site estático, sem framework.",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:js": "eslint .",
+    "lint:html": "html-validate index.html menu.html 404.html",
+    "lint": "npm run format:check && npm run lint:js && npm run lint:html",
+    "build": "node scripts/build.mjs",
+    "check": "npm run lint && npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0",
+    "html-validate": "^11.21.1",
+    "prettier": "^3.10.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

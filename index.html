@@ -1,0 +1,1341 @@
+<!doctype html>
+<html lang="pt" class="js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Índico Coffee · Café em Maputo</title>
+    <meta
+      name="description"
+      content="Índico Coffee, em Maputo. Café tirado no momento, bebidas frias, pequeno-almoço, tostas e pastelaria. Ligue +258 84 959 6865."
+    />
+    <meta name="theme-color" content="#0b3a2a" />
+    <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:site_name" content="Índico Coffee" />
+    <meta property="og:title" content="Índico Coffee · Um café sem pressa, em Maputo" />
+    <meta property="og:description" content="Café tirado no momento, pequeno-almoço e pastelaria em Maputo." />
+    <meta property="og:image" content="assets/img/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Mrs+Saint+Delafield&display=swap"
+    />
+    <link rel="preload" as="image" href="assets/img/hero.jpg" media="(min-width: 810px)" />
+    <link rel="preload" as="image" href="assets/img/hero-mobile.jpg" media="(max-width: 809px)" />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+
+    <script defer src="assets/js/vendor/motion.min.js"></script>
+    <script defer src="assets/js/core.js"></script>
+    <script defer src="assets/js/data/site.js"></script>
+    <script defer src="assets/js/data/menu.js"></script>
+    <script defer src="assets/js/modules/site-info.js"></script>
+    <script defer src="assets/js/modules/header.js"></script>
+    <script defer src="assets/js/modules/menu.js"></script>
+    <script defer src="assets/js/modules/carousel.js"></script>
+    <script defer src="assets/js/modules/animations.js"></script>
+    <script defer src="assets/js/modules/cup-journey.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Índico Coffee",
+        "description": "Café em Maputo: café tirado no momento, bebidas frias, pequeno-almoço, tostas e pastelaria.",
+        "image": "assets/img/og-image.jpg",
+        "telephone": "+258 84 959 6865",
+        "address": { "@type": "PostalAddress", "addressLocality": "Maputo", "addressCountry": "MZ" },
+        "servesCuisine": ["Café", "Pequeno-almoço", "Pastelaria"]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Posso levar o meu cão ou gato?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pode. Cães e gatos são bem-vindos dentro do café, de preferência com trela."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "É preciso reservar mesa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não é preciso. Para grupos, ligue-nos ou mande uma mensagem pelo WhatsApp e guardamos lugar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso encomendar para levar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pode pedir ao balcão ou encomendar por telefone e passar a levantar quando lhe der jeito."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso trabalhar no café com o portátil?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Claro. Escolha uma mesa e fique o tempo que precisar." }
+          },
+          {
+            "@type": "Question",
+            "name": "Onde ficam?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Em Maputo. A morada e o mapa estão na secção de contactos, logo abaixo."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <svg width="0" height="0" class="visually-hidden" aria-hidden="true">
+      <symbol id="icon-arrow" viewBox="0 0 16 16">
+        <path
+          d="M3 8h10M9 4l4 4-4 4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path
+          d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24">
+        <path
+          d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="1.8" />
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+        <path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-paw" viewBox="0 0 24 24">
+        <circle cx="6" cy="10" r="2" fill="currentColor" />
+        <circle cx="9.5" cy="5.5" r="2" fill="currentColor" />
+        <circle cx="14.5" cy="5.5" r="2" fill="currentColor" />
+        <circle cx="18" cy="10" r="2" fill="currentColor" />
+        <path
+          fill="currentColor"
+          d="M12 11c-2.6 0-6 3.6-6 6.6 0 1.5 1.1 2.4 2.5 2.4 1.3 0 2.2-.8 3.5-.8s2.2.8 3.5.8c1.4 0 2.5-.9 2.5-2.4 0-3-3.4-6.6-6-6.6z"
+        />
+      </symbol>
+      <symbol id="icon-drop" viewBox="0 0 24 24">
+        <path
+          d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24">
+        <path
+          d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21.5l8.8-8.8a5 5 0 0 0 0-7.1z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41z"
+        />
+      </symbol>
+      <symbol id="icon-facebook" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M9.1 23.69v-7.98H6.63v-3.67H9.1v-1.58c0-4.09 1.85-5.98 5.86-5.98.4 0 .95.04 1.47.1.45.06.88.13 1.14.2v3.32l-.65-.03a26.8 26.8 0 0 0-.73-.01c-.71 0-1.26.1-1.68.31a1.69 1.69 0 0 0-.68.62c-.26.42-.37 1-.37 1.75v1.3h3.92l-.39 2.1-.29 1.57h-3.24v8.25C19.4 23.24 24 18.18 24 12.04 24 5.42 18.63.04 12 .04S0 5.42 0 12.04c0 5.63 3.87 10.35 9.1 11.65z"
+        />
+      </symbol>
+      <symbol id="icon-tiktok" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+        />
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.9" />
+        <circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.9" />
+        <circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" />
+      </symbol>
+    </svg>
+
+    <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+    <!-- Cabeçalho -->
+    <header class="site-header">
+      <a class="logo" href="index.html" aria-label="Índico Coffee, página inicial">
+        <img src="assets/img/brand/logo.svg" alt="Índico Coffee" width="72" height="44" />
+      </a>
+      <nav class="site-nav" aria-label="Principal">
+        <a href="#sobre">Sobre nós</a>
+        <a href="#menu">Menu</a>
+        <a href="#animais">Animais</a>
+        <a href="#contactos">Contactos</a>
+      </nav>
+      <a class="btn btn--dark" href="tel:+258849596865" data-site-href="phone">
+        Ligar
+        <span class="btn__icon">
+          <svg><use href="#icon-arrow" /></svg>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+      </button>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+      <nav aria-label="Principal (telemóvel)">
+        <a href="#sobre">Sobre nós</a>
+        <a href="#menu">Menu</a>
+        <a href="#animais">Animais</a>
+        <a href="#contactos">Contactos</a>
+      </nav>
+      <div class="mobile-nav__info">
+        <span data-site="city">Maputo, Moçambique</span>
+        <a href="tel:+258849596865" data-site-href="phone" data-site="phone">+258&nbsp;84&nbsp;959&nbsp;6865</a>
+        <a
+          href="https://wa.me/258849596865"
+          data-site-if="whatsapp"
+          data-site-href="whatsapp"
+          target="_blank"
+          rel="noopener"
+        >
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <main id="conteudo">
+      <!-- Banner: o copo começa na mão da foto. data-cup-* = posição do copo na imagem; data-cup-mobile = o mesmo na foto vertical (x y altura graus) -->
+      <section class="hero" aria-labelledby="hero-title">
+        <picture class="hero__media">
+          <source media="(max-width: 809px)" srcset="assets/img/hero-mobile.jpg" width="1170" height="2084" />
+          <img
+            src="assets/img/hero.jpg"
+            alt="Jovem sorridente a segurar um copo do Índico Coffee"
+            width="2200"
+            height="1457"
+            fetchpriority="high"
+            data-cup-photo
+            data-cup-start
+            data-cup-x="1005"
+            data-cup-y="697"
+            data-cup-h="582"
+            data-cup-rot="-9"
+            data-cup-mobile="299 657 485 -5"
+          />
+        </picture>
+        <div class="hero__veil" aria-hidden="true"></div>
+        <div class="hero__shade" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <div class="container">
+            <h1 class="h1" id="hero-title">
+              <span class="line"><span>Um café</span></span>
+              <span class="line"><span>sem</span></span>
+              <span class="line"><span>pressa.</span></span>
+            </h1>
+            <p class="script" data-script>À beira do Índico.</p>
+            <p class="lead" data-reveal>
+              Café tirado no momento, pequeno-almoço e pastelaria em Maputo. Venha com tempo. Nós também não temos
+              pressa.
+            </p>
+            <div class="hero__actions" data-reveal>
+              <a class="btn" href="#menu">
+                Ver o menu
+                <span class="btn__icon">
+                  <svg><use href="#icon-arrow" /></svg>
+                </span>
+              </a>
+              <a class="btn btn--ghost" href="tel:+258849596865" data-site-href="phone">
+                Ligar
+                <span class="btn__icon">
+                  <svg><use href="#icon-arrow" /></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Os mais pedidos -->
+      <section class="section" aria-labelledby="favoritos-title">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-head__main">
+              <p class="eyebrow" data-reveal>Os mais pedidos</p>
+              <h2 class="h2" id="favoritos-title">
+                <span class="line"><span>Por onde</span></span>
+                <span class="line"><span>começar.</span></span>
+              </h2>
+            </div>
+            <div class="cup-slot cup-slot--float" data-cup-rot="8"></div>
+            <div class="section-head__aside" data-reveal>
+              <p class="text">Se é a primeira vez que nos visita, comece por um destes. O resto está no menu.</p>
+              <a class="btn btn--dark" href="menu.html">
+                Ver o menu completo
+                <span class="btn__icon">
+                  <svg><use href="#icon-arrow" /></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid-3" data-carousel="Os mais pedidos">
+            <article class="product" data-reveal>
+              <div class="product__media">
+                <img
+                  src="assets/img/cappuccino-sm.jpg"
+                  alt="Dirty chai com desenho no leite"
+                  loading="lazy"
+                  width="800"
+                  height="800"
+                />
+              </div>
+              <div class="product__body">
+                <h3 class="h3">Dirty Chai</h3>
+                <p class="small">Chai com especiarias, um shot de espresso e leite</p>
+                <div class="product__foot">
+                  <span class="price">
+                    220
+                    <small>MT</small>
+                  </span>
+                  <a class="btn btn--sm" href="menu.html#especiais">
+                    Ver no menu
+                    <span class="btn__icon">
+                      <svg><use href="#icon-arrow" /></svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="product" data-reveal>
+              <div class="product__media">
+                <img
+                  src="assets/img/iced-glass-sm.jpg"
+                  alt="Café gelado num copo de vidro"
+                  loading="lazy"
+                  width="800"
+                  height="534"
+                />
+              </div>
+              <div class="product__body">
+                <h3 class="h3">Frappuccino</h3>
+                <p class="small">Café, leite e gelo, batidos na hora</p>
+                <div class="product__foot">
+                  <span class="price">
+                    250
+                    <small>MT</small>
+                  </span>
+                  <a class="btn btn--sm" href="menu.html#frios">
+                    Ver no menu
+                    <span class="btn__icon">
+                      <svg><use href="#icon-arrow" /></svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="product" data-reveal>
+              <div class="product__media">
+                <img
+                  src="assets/img/avo-sm.jpg"
+                  alt="Tosta de abacate com ovo escalfado"
+                  loading="lazy"
+                  width="800"
+                  height="530"
+                />
+              </div>
+              <div class="product__body">
+                <h3 class="h3">French Avo</h3>
+                <p class="small">Abacate em pão tostado, com ovo escalfado</p>
+                <div class="product__foot">
+                  <span class="price">
+                    380
+                    <small>MT</small>
+                  </span>
+                  <a class="btn btn--sm" href="menu.html#pequeno-almoco">
+                    Ver no menu
+                    <span class="btn__icon">
+                      <svg><use href="#icon-arrow" /></svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pausa -->
+      <section class="story is-dark" aria-labelledby="pausa-title">
+        <div class="story__media" data-parallax>
+          <img src="assets/img/latte-art.jpg" alt="" loading="lazy" width="1600" height="1067" />
+        </div>
+        <div class="container">
+          <div>
+            <h2 class="h2" id="pausa-title">
+              <span class="line"><span>Quando o dia</span></span>
+              <span class="line"><span>pede uma</span></span>
+              <span class="line"><span>pausa.</span></span>
+            </h2>
+            <p class="script" data-script>Fique o tempo que quiser.</p>
+          </div>
+          <div class="story__aside" data-reveal>
+            <p class="text">
+              Há quem venha só pelo primeiro café da manhã e quem fique a tarde inteira com o portátil. Ninguém aqui tem
+              pressa de o ver sair.
+            </p>
+            <a class="btn btn--light btn--sm" href="#sobre">
+              Sobre nós
+              <span class="btn__icon">
+                <svg><use href="#icon-arrow" /></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="story__frame" aria-hidden="true"><div class="cup-slot" data-cup-rot="0"></div></div>
+      </section>
+
+      <!-- Sobre nós -->
+      <section class="section" id="sobre" aria-labelledby="sobre-title">
+        <div class="container about">
+          <div class="about__panel" data-reveal>
+            <span class="about__wordmark" aria-hidden="true">Índico</span>
+            <div class="cup-slot" data-cup-rot="-8"></div>
+          </div>
+          <div class="about__copy">
+            <p class="eyebrow" data-reveal>Sobre nós</p>
+            <div>
+              <h2 class="h2" id="sobre-title">
+                <span class="line"><span>Bom café</span></span>
+                <span class="line"><span>dá trabalho.</span></span>
+              </h2>
+              <p class="script" data-script>E nós gostamos disso.</p>
+            </div>
+            <p class="lead" data-reveal>
+              O Índico Coffee é um café em Maputo. Preparamos cada bebida ao balcão, no momento em que a pede, e fazemos
+              questão de que a segunda visita seja ainda melhor do que a primeira.
+            </p>
+            <a class="btn" href="#contactos" data-reveal>
+              Contactos
+              <span class="btn__icon">
+                <svg><use href="#icon-arrow" /></svg>
+              </span>
+            </a>
+            <ol class="steps">
+              <li class="step" data-reveal>
+                <div class="step__media">
+                  <img
+                    src="assets/img/beans-sm.jpg"
+                    alt="Grãos de café torrado"
+                    loading="lazy"
+                    width="800"
+                    height="534"
+                  />
+                </div>
+                <div>
+                  <span class="step__index">01</span>
+                  <h3>O grão</h3>
+                  <p class="small">Escolhemos o café pelo sabor que deixa na chávena.</p>
+                </div>
+              </li>
+              <li class="step" data-reveal>
+                <div class="step__media">
+                  <img
+                    src="assets/img/extraction-sm.jpg"
+                    alt="Espresso a ser extraído"
+                    loading="lazy"
+                    width="800"
+                    height="800"
+                  />
+                </div>
+                <div>
+                  <span class="step__index">02</span>
+                  <h3>A extração</h3>
+                  <p class="small">Cada espresso é tirado só quando o pede.</p>
+                </div>
+              </li>
+              <li class="step" data-reveal>
+                <div class="step__media">
+                  <img
+                    src="assets/img/serving-sm.jpg"
+                    alt="Barista a servir uma cliente"
+                    loading="lazy"
+                    width="800"
+                    height="600"
+                  />
+                </div>
+                <div>
+                  <span class="step__index">03</span>
+                  <h3>O serviço</h3>
+                  <p class="small">Levamos-lhe a bebida à mesa, ainda quente.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Animais -->
+      <section class="section section--cream" id="animais" aria-labelledby="animais-title">
+        <div class="container pets">
+          <div class="pets__media" data-reveal>
+            <div class="pets__main">
+              <img
+                src="assets/img/dog.jpg"
+                alt="Cão sentado ao lado de uma mesa com um latte"
+                loading="lazy"
+                width="1600"
+                height="2007"
+              />
+            </div>
+            <div class="pets__detail">
+              <img
+                src="assets/img/cup-flowers-sm.jpg"
+                alt="Chávena de café com flores"
+                loading="lazy"
+                width="800"
+                height="534"
+              />
+            </div>
+            <p class="pets__badge">
+              <svg aria-hidden="true"><use href="#icon-paw" /></svg>
+              Pet friendly
+            </p>
+          </div>
+          <div class="pets__copy">
+            <div class="cup-slot cup-slot--float" data-cup-rot="10"></div>
+            <p class="eyebrow" data-reveal>Animais bem-vindos</p>
+            <h2 class="h2" id="animais-title">
+              <span class="line"><span>Traga o seu</span></span>
+              <span class="line"><span>melhor</span></span>
+              <span class="line"><span>amigo.</span></span>
+            </h2>
+            <p class="lead" data-reveal>
+              Cães e gatos podem entrar consigo. Peça o seu café e fiquem os dois à vontade.
+            </p>
+            <ul class="features" data-reveal>
+              <li class="feature">
+                <span class="feature__icon">
+                  <svg aria-hidden="true"><use href="#icon-paw" /></svg>
+                </span>
+                <div>
+                  <h3>Entram connosco</h3>
+                  <p class="small">Há lugar para o seu animal ao seu lado, dentro do café.</p>
+                </div>
+              </li>
+              <li class="feature">
+                <span class="feature__icon">
+                  <svg aria-hidden="true"><use href="#icon-drop" /></svg>
+                </span>
+                <div>
+                  <h3>Água fresca</h3>
+                  <p class="small">Peça ao balcão uma taça de água para ele.</p>
+                </div>
+              </li>
+              <li class="feature">
+                <span class="feature__icon">
+                  <svg aria-hidden="true"><use href="#icon-heart" /></svg>
+                </span>
+                <div>
+                  <h3>Com trela, por favor</h3>
+                  <p class="small">Assim todos ficam à vontade, incluindo os outros animais.</p>
+                </div>
+              </li>
+            </ul>
+            <div class="pets__actions" data-reveal>
+              <a
+                class="btn btn--dark"
+                href="https://wa.me/258849596865"
+                data-site-if="whatsapp"
+                data-site-href="whatsapp"
+                target="_blank"
+                rel="noopener"
+              >
+                WhatsApp
+                <span class="btn__icon">
+                  <svg><use href="#icon-whatsapp" /></svg>
+                </span>
+              </a>
+              <a class="btn btn--outline" href="tel:+258849596865" data-site-href="phone">
+                Ligar
+                <span class="btn__icon">
+                  <svg><use href="#icon-phone" /></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu: os itens vêm de assets/js/data/menu.js -->
+      <section class="section" id="menu" aria-labelledby="menu-title">
+        <div class="container menu-preview">
+          <div class="menu-preview__intro">
+            <p class="eyebrow" data-reveal>Menu</p>
+            <h2 class="h2" id="menu-title">
+              <span class="line"><span>Para todas</span></span>
+              <span class="line"><span>as horas</span></span>
+              <span class="line"><span>do dia.</span></span>
+            </h2>
+            <p class="text" data-reveal>Cafés, bebidas frias, pequeno-almoço e uns doces para acompanhar.</p>
+            <a class="btn btn--dark" href="menu.html" data-reveal>
+              Menu completo
+              <span class="btn__icon">
+                <svg><use href="#icon-arrow" /></svg>
+              </span>
+            </a>
+            <div class="cup-slot" data-cup-rot="6"></div>
+          </div>
+          <div class="menu-preview__board" data-reveal>
+            <div
+              class="menu-tabs"
+              role="tablist"
+              aria-label="Categorias do menu"
+              data-menu-tabs="cafes,especiais,frios,pequeno-almoco"
+            ></div>
+            <div id="menu-panel" role="tabpanel" data-menu-preview></div>
+            <noscript>
+              <p class="menu-preview__note">
+                Veja o
+                <a href="menu.html">menu completo</a>
+                .
+              </p>
+            </noscript>
+            <p class="menu-preview__note">Preços em meticais (MT).</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Momentos -->
+      <section class="section section--green is-dark" aria-labelledby="momentos-title">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-head__main">
+              <p class="eyebrow" data-reveal>No Índico</p>
+              <h2 class="h2" id="momentos-title">
+                <span class="line"><span>Um lugar</span></span>
+                <span class="line"><span>para ficar.</span></span>
+              </h2>
+            </div>
+            <div class="cup-slot cup-slot--float" data-cup-rot="-8"></div>
+            <div class="section-head__aside" data-reveal>
+              <p class="text">
+                Venha para o primeiro café do dia ou para uma conversa que se estende pela tarde. Há lugar para as duas
+                coisas.
+              </p>
+            </div>
+          </div>
+          <div class="grid-4" data-carousel="Momentos no Índico Coffee">
+            <article class="moment" data-reveal>
+              <div class="moment__media">
+                <img
+                  src="assets/img/slow-morning-sm.jpg"
+                  alt="Chávena de café sobre uma mesa ao sol"
+                  loading="lazy"
+                  width="800"
+                  height="534"
+                />
+              </div>
+              <p class="moment__index">01</p>
+              <h3>De manhã</h3>
+              <p>O primeiro café do dia, sem olhar para o relógio.</p>
+            </article>
+            <article class="moment" data-reveal>
+              <div class="moment__media">
+                <img
+                  src="assets/img/friends-sm.jpg"
+                  alt="Amigos à mesa com cafés"
+                  loading="lazy"
+                  width="800"
+                  height="533"
+                />
+              </div>
+              <p class="moment__index">02</p>
+              <h3>Com amigos</h3>
+              <p>Para pôr a conversa em dia.</p>
+            </article>
+            <article class="moment" data-reveal>
+              <div class="moment__media">
+                <img
+                  src="assets/img/laptop-sm.jpg"
+                  alt="Portátil e café numa mesa de madeira"
+                  loading="lazy"
+                  width="800"
+                  height="534"
+                />
+              </div>
+              <p class="moment__index">03</p>
+              <h3>A trabalhar</h3>
+              <p>Traga o portátil e fique mais um bocado.</p>
+            </article>
+            <article class="moment" data-reveal>
+              <div class="moment__media">
+                <img
+                  src="assets/img/afternoon-sm.jpg"
+                  alt="Mesa junto à janela ao fim da tarde"
+                  loading="lazy"
+                  width="800"
+                  height="533"
+                />
+              </div>
+              <p class="moment__index">04</p>
+              <h3>Ao fim da tarde</h3>
+              <p>Para fechar o dia com calma.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tirado na hora -->
+      <section class="band" aria-labelledby="hora-title">
+        <img src="assets/img/extraction.jpg" alt="" loading="lazy" width="1600" height="1600" data-parallax />
+        <div class="cup-slot cup-slot--float" data-cup-rot="-6"></div>
+        <div class="container is-dark">
+          <h2 class="h2" id="hora-title">
+            <span class="line"><span>Tirado</span></span>
+            <span class="line"><span>na hora.</span></span>
+          </h2>
+          <p class="lead" data-reveal>Preparamos cada espresso quando o pede, para chegar à mesa como deve ser.</p>
+        </div>
+      </section>
+
+      <!-- A bebida da casa: o copo termina nesta mão e a foto troca para a mão a segurá-lo -->
+      <section class="section" aria-labelledby="casa-title">
+        <div class="container signature">
+          <div class="signature__media">
+            <img
+              src="assets/img/mao-vazia.jpg"
+              alt="Mão a segurar um copo do Índico Coffee"
+              loading="lazy"
+              width="1600"
+              height="2007"
+              data-cup-photo
+              data-cup-end
+              data-cup-x="782"
+              data-cup-y="1068"
+              data-cup-h="825"
+              data-cup-rot="0"
+              data-cup-sx="1.12"
+            />
+            <img
+              class="signature__grip"
+              src="assets/img/mao-copo.jpg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              width="1600"
+              height="2007"
+            />
+          </div>
+          <div class="signature__card" data-reveal>
+            <p class="eyebrow">A bebida da casa</p>
+            <h2 class="h2" id="casa-title">
+              O nosso
+              <br />
+              dirty chai.
+            </h2>
+            <ol class="signature__recipe">
+              <li>Chai com especiarias</li>
+              <li>Um shot de espresso</li>
+              <li>Leite vaporizado ou com gelo</li>
+            </ol>
+            <div class="signature__foot">
+              <span class="price">
+                220
+                <small>MT</small>
+              </span>
+              <a class="btn btn--dark" href="menu.html#especiais">
+                Ver no menu
+                <span class="btn__icon">
+                  <svg><use href="#icon-arrow" /></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Para acompanhar -->
+      <section class="section section--flush-top" aria-labelledby="comer-title">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-head__main">
+              <p class="eyebrow" data-reveal>Para acompanhar</p>
+              <h2 class="h2" id="comer-title">
+                <span class="line"><span>Do pequeno-almoço</span></span>
+                <span class="line"><span>ao lanche.</span></span>
+              </h2>
+            </div>
+            <a class="btn btn--dark" href="menu.html#pequeno-almoco" data-reveal>
+              Ver tudo
+              <span class="btn__icon">
+                <svg><use href="#icon-arrow" /></svg>
+              </span>
+            </a>
+          </div>
+          <div class="grid-4" data-carousel="Para acompanhar">
+            <article class="dish" data-reveal>
+              <div class="dish__media">
+                <img src="assets/img/avo-sm.jpg" alt="Tosta de abacate" loading="lazy" width="800" height="530" />
+              </div>
+              <div class="dish__body">
+                <h3>French Avo</h3>
+                <span class="price">
+                  380
+                  <small>MT</small>
+                </span>
+                <p class="small">Abacate, pão tostado e ovo</p>
+              </div>
+            </article>
+            <article class="dish" data-reveal>
+              <div class="dish__media">
+                <img src="assets/img/croissant-sm.jpg" alt="Croissant" loading="lazy" width="800" height="600" />
+              </div>
+              <div class="dish__body">
+                <h3>Croissant</h3>
+                <span class="price">
+                  120
+                  <small>MT</small>
+                </span>
+                <p class="small">Massa folhada com manteiga</p>
+              </div>
+            </article>
+            <article class="dish" data-reveal>
+              <div class="dish__media">
+                <img
+                  src="assets/img/cinnamon-roll-sm.jpg"
+                  alt="Rolo de canela"
+                  loading="lazy"
+                  width="800"
+                  height="534"
+                />
+              </div>
+              <div class="dish__body">
+                <h3>Rolo de Canela</h3>
+                <span class="price">
+                  150
+                  <small>MT</small>
+                </span>
+                <p class="small">Canela e açúcar mascavado</p>
+              </div>
+            </article>
+            <article class="dish" data-reveal>
+              <div class="dish__media">
+                <img src="assets/img/cookie-sm.jpg" alt="Cookie de chocolate" loading="lazy" width="800" height="534" />
+              </div>
+              <div class="dish__body">
+                <h3>Cookie</h3>
+                <span class="price">
+                  120
+                  <small>MT</small>
+                </span>
+                <p class="small">Chocolate negro e flor de sal</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Como trabalhamos: no telemóvel é uma lista (não carrossel) -->
+      <section class="section section--cream" aria-labelledby="trabalho-title">
+        <div class="container">
+          <div class="section-head section-head--center">
+            <div class="section-head__main">
+              <p class="eyebrow" data-reveal>Como trabalhamos</p>
+              <h2 class="h2" id="trabalho-title">
+                <span class="line"><span>Os pormenores</span></span>
+                <span class="line"><span>contam.</span></span>
+              </h2>
+            </div>
+          </div>
+          <div class="grid-3 praise-list">
+            <article class="praise" data-reveal>
+              <div class="praise__media">
+                <img
+                  src="assets/img/hand-cup-sm.jpg"
+                  alt="Mão a segurar uma chávena de café"
+                  loading="lazy"
+                  width="800"
+                  height="534"
+                />
+              </div>
+              <div class="praise__body">
+                <h3>O café</h3>
+                <p class="small">Ajustamos a moagem ao longo do dia, para que cada espresso saia equilibrado.</p>
+              </div>
+            </article>
+            <article class="praise" data-reveal>
+              <div class="praise__media">
+                <img
+                  src="assets/img/two-cups-sm.jpg"
+                  alt="Duas chávenas com desenho no leite"
+                  loading="lazy"
+                  width="800"
+                  height="534"
+                />
+              </div>
+              <div class="praise__body">
+                <h3>O leite</h3>
+                <p class="small">Vaporizado na altura, com a textura que cada bebida pede.</p>
+              </div>
+            </article>
+            <article class="praise" data-reveal>
+              <div class="praise__media">
+                <img
+                  src="assets/img/barista-woman-sm.jpg"
+                  alt="Barista sorridente ao balcão"
+                  loading="lazy"
+                  width="800"
+                  height="534"
+                />
+              </div>
+              <div class="praise__body">
+                <h3>As pessoas</h3>
+                <p class="small">À segunda visita já sabemos como gosta do seu café.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galeria (substituir por fotos reais do café) -->
+      <section class="section" aria-labelledby="galeria-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2" id="galeria-title">
+              <span class="line"><span>Dentro</span></span>
+              <span class="line"><span>do Índico.</span></span>
+            </h2>
+            <a
+              class="btn"
+              href="#"
+              data-site-if="instagram"
+              data-site-href="instagram"
+              target="_blank"
+              rel="noopener"
+              data-reveal
+            >
+              <span data-site="instagram">Instagram</span>
+              <span class="btn__icon">
+                <svg><use href="#icon-arrow" /></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="gallery" aria-hidden="true">
+          <div class="gallery__row">
+            <img src="assets/img/mug-window-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/espresso-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/barista-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/interior-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/croissants-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/pitcher-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/coffee-book-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/mug-window-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/espresso-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/barista-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/interior-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/croissants-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/pitcher-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/coffee-book-sm.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="gallery__row gallery__row--reverse">
+            <img src="assets/img/beans-dark-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/bar-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/cappuccino-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/interior-warm-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/pourover-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/man-cup-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/iced-coffee-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/beans-dark-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/bar-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/cappuccino-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/interior-warm-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/pourover-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/man-cup-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/iced-coffee-sm.jpg" alt="" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Perguntas frequentes -->
+      <section class="section" id="perguntas" aria-labelledby="perguntas-title">
+        <div class="container faq">
+          <div class="faq__intro">
+            <p class="eyebrow" data-reveal>Perguntas frequentes</p>
+            <h2 class="h2" id="perguntas-title">
+              <span class="line"><span>Antes</span></span>
+              <span class="line"><span>de vir.</span></span>
+            </h2>
+            <p class="text" data-reveal>
+              Não encontrou a resposta? Escreva-nos pelo WhatsApp e respondemos assim que pudermos.
+            </p>
+            <a
+              class="btn btn--dark"
+              href="https://wa.me/258849596865"
+              data-site-if="whatsapp"
+              data-site-href="whatsapp"
+              target="_blank"
+              rel="noopener"
+              data-reveal
+            >
+              WhatsApp
+              <span class="btn__icon">
+                <svg><use href="#icon-whatsapp" /></svg>
+              </span>
+            </a>
+          </div>
+          <div class="faq__list" data-reveal>
+            <details class="faq-item">
+              <summary>Posso levar o meu cão ou gato?</summary>
+              <p>Pode. Cães e gatos são bem-vindos dentro do café, de preferência com trela.</p>
+            </details>
+            <details class="faq-item">
+              <summary>É preciso reservar mesa?</summary>
+              <p>Não é preciso. Para grupos, ligue-nos ou mande uma mensagem pelo WhatsApp e guardamos lugar.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Posso encomendar para levar?</summary>
+              <p>Pode pedir ao balcão ou encomendar por telefone e passar a levantar quando lhe der jeito.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Posso trabalhar no café com o portátil?</summary>
+              <p>Claro. Escolha uma mesa e fique o tempo que precisar.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Onde ficam?</summary>
+              <p>Em Maputo. A morada e o mapa estão na secção de contactos, logo abaixo.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contactos: valores aplicados a partir de assets/js/data/site.js -->
+      <section class="section section--flush-top" id="contactos" aria-labelledby="contactos-title">
+        <div class="container">
+          <div class="visit">
+            <div class="visit__intro">
+              <p class="eyebrow" data-reveal>Contactos</p>
+              <h2 class="h2" id="contactos-title">
+                <span class="line"><span>Até já,</span></span>
+                <span class="line"><span>em Maputo.</span></span>
+              </h2>
+              <p class="text" data-reveal>Para reservar uma mesa para um grupo ou fazer uma encomenda, ligue-nos.</p>
+            </div>
+            <article class="location" data-reveal>
+              <div class="location__media">
+                <img
+                  src="assets/img/storefront-sm.jpg"
+                  alt="Fachada do Índico Coffee, com mesas junto à montra"
+                  loading="lazy"
+                  width="800"
+                  height="530"
+                />
+              </div>
+              <div class="location__body">
+                <h3 class="h3" data-site="name">Índico Coffee</h3>
+                <address>
+                  <span data-site-if="address">
+                    <span data-site="address"></span>
+                    <br />
+                  </span>
+                  <span data-site="city">Maputo, Moçambique</span>
+                </address>
+                <dl class="location__facts">
+                  <div>
+                    <dt>Telefone</dt>
+                    <dd>
+                      <a href="tel:+258849596865" data-site-href="phone" data-site="phone">
+                        +258&nbsp;84&nbsp;959&nbsp;6865
+                      </a>
+                    </dd>
+                  </div>
+                  <div data-site-if="hours">
+                    <dt>Horário</dt>
+                    <dd data-site="hours"></dd>
+                  </div>
+                  <div data-site-if="payment">
+                    <dt>Pagamento</dt>
+                    <dd data-site="payment"></dd>
+                  </div>
+                </dl>
+                <div class="location__actions">
+                  <a class="btn btn--dark btn--sm" href="tel:+258849596865" data-site-href="phone">
+                    Ligar
+                    <span class="btn__icon">
+                      <svg><use href="#icon-arrow" /></svg>
+                    </span>
+                  </a>
+                  <a
+                    class="btn btn--sm"
+                    href="https://wa.me/258849596865"
+                    data-site-if="whatsapp"
+                    data-site-href="whatsapp"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    WhatsApp
+                    <span class="btn__icon">
+                      <svg><use href="#icon-whatsapp" /></svg>
+                    </span>
+                  </a>
+                  <a
+                    class="btn btn--sm"
+                    href="https://www.google.com/maps/dir/?api=1&amp;destination=Maputo"
+                    data-site-href="maps"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Como chegar
+                    <span class="btn__icon">
+                      <svg><use href="#icon-arrow" /></svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <div class="map" data-reveal>
+              <iframe
+                title="Mapa de Maputo"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                data-site-src="map"
+                src="https://www.google.com/maps?q=Maputo&amp;z=13&amp;output=embed"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="follow" data-reveal>
+            <h2 class="h2">Fale connosco.</h2>
+            <div class="follow__aside">
+              <p>Uma dúvida, uma encomenda ou só saber se há mesa livre. Ligue ou escreva-nos pelo WhatsApp.</p>
+              <a class="btn btn--dark" href="tel:+258849596865" data-site-href="phone">
+                <span data-site="phone">+258&nbsp;84&nbsp;959&nbsp;6865</span>
+                <span class="btn__icon">
+                  <svg><use href="#icon-arrow" /></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final -->
+      <section class="final-cta" aria-labelledby="final-title">
+        <img src="assets/img/beans-dark.jpg" alt="" loading="lazy" width="1600" height="1060" />
+        <div class="container">
+          <h2 class="h-cta" id="final-title">
+            <span class="line"><span>Até ao</span></span>
+            <span class="line"><span>próximo</span></span>
+            <span class="line"><span>café.</span></span>
+          </h2>
+          <a class="btn" href="menu.html" data-reveal>
+            Ver o menu
+            <span class="btn__icon">
+              <svg><use href="#icon-arrow" /></svg>
+            </span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <a class="logo" href="index.html" aria-label="Índico Coffee, página inicial">
+              <img src="assets/img/brand/logo.svg" alt="Índico Coffee" width="158" height="96" />
+            </a>
+            <p>Um café sem pressa, em Maputo.</p>
+            <ul class="social-links" aria-label="Redes sociais">
+              <li data-site-if="whatsapp">
+                <a
+                  class="social-link"
+                  href="https://wa.me/258849596865"
+                  data-site-href="whatsapp"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="WhatsApp"
+                >
+                  <svg aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+                </a>
+              </li>
+              <li data-site-if="instagram">
+                <a
+                  class="social-link"
+                  href="#"
+                  data-site-href="instagram"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram"
+                >
+                  <svg aria-hidden="true"><use href="#icon-instagram" /></svg>
+                </a>
+              </li>
+              <li data-site-if="facebook">
+                <a
+                  class="social-link"
+                  href="#"
+                  data-site-href="facebook"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Facebook"
+                >
+                  <svg aria-hidden="true"><use href="#icon-facebook" /></svg>
+                </a>
+              </li>
+              <li data-site-if="tiktok">
+                <a
+                  class="social-link"
+                  href="#"
+                  data-site-href="tiktok"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="TikTok"
+                >
+                  <svg aria-hidden="true"><use href="#icon-tiktok" /></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <nav aria-labelledby="footer-nav-title">
+            <h2 id="footer-nav-title">Navegação</h2>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="#sobre">Sobre nós</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="#animais">Animais</a></li>
+              <li><a href="#perguntas">Perguntas frequentes</a></li>
+              <li><a href="#contactos">Contactos</a></li>
+            </ul>
+          </nav>
+          <nav aria-labelledby="footer-menu-title">
+            <h2 id="footer-menu-title">Menu</h2>
+            <ul>
+              <li><a href="menu.html#cafes">Cafés</a></li>
+              <li><a href="menu.html#especiais">Especiais</a></li>
+              <li><a href="menu.html#frios">Frios</a></li>
+              <li><a href="menu.html#pequeno-almoco">Pequeno-almoço</a></li>
+              <li><a href="menu.html#doces">Doces</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h2>Contactos</h2>
+            <ul class="site-footer__contacts">
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="#icon-phone" /></svg>
+                <a href="tel:+258849596865" data-site-href="phone" data-site="phone">+258&nbsp;84&nbsp;959&nbsp;6865</a>
+              </li>
+              <li data-site-if="hours">
+                <svg class="icon" aria-hidden="true"><use href="#icon-clock" /></svg>
+                <span data-site="hours"></span>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="#icon-pin" /></svg>
+                <span>
+                  <span data-site-if="address">
+                    <span data-site="address"></span>
+                    ,
+                  </span>
+                  <span data-site="city">Maputo, Moçambique</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <span>
+            ©
+            <span data-year>2026</span>
+            Índico Coffee. Todos os direitos reservados.
+          </span>
+          <span>Desenvolvido por Eclesio Pembelane</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copo que viaja (ver assets/js/modules/cup-journey.js) -->
+    <div class="cup" aria-hidden="true">
+      <svg viewBox="0 0 240 340">
+        <defs>
+          <linearGradient id="cup-kraft" x1="0" x2="1">
+            <stop offset="0" stop-color="#9c7348" />
+            <stop offset=".22" stop-color="#c99e70" />
+            <stop offset=".5" stop-color="#d6ad80" />
+            <stop offset=".8" stop-color="#c4976a" />
+            <stop offset="1" stop-color="#8f6740" />
+          </linearGradient>
+          <linearGradient id="cup-base" x1="0" x2="1">
+            <stop offset="0" stop-color="#cfcabe" />
+            <stop offset=".45" stop-color="#fbf9f4" />
+            <stop offset="1" stop-color="#bdb8ac" />
+          </linearGradient>
+          <linearGradient id="cup-shade" x1="0" x2="1">
+            <stop offset="0" stop-color="#2b1a0b" stop-opacity=".35" />
+            <stop offset=".2" stop-color="#2b1a0b" stop-opacity="0" />
+            <stop offset=".55" stop-color="#fff" stop-opacity=".1" />
+            <stop offset=".8" stop-color="#2b1a0b" stop-opacity="0" />
+            <stop offset="1" stop-color="#2b1a0b" stop-opacity=".4" />
+          </linearGradient>
+          <linearGradient id="cup-lid" x1="0" x2="1">
+            <stop offset="0" stop-color="#0c0c0b" />
+            <stop offset=".3" stop-color="#3a3a37" />
+            <stop offset=".55" stop-color="#1d1d1b" />
+            <stop offset="1" stop-color="#070707" />
+          </linearGradient>
+          <clipPath id="cup-body-clip"><path d="M34 76H206L184 322Q183 332 173 332H67Q57 332 56 322Z" /></clipPath>
+        </defs>
+        <path d="M34 76H206L184 322Q183 332 173 332H67Q57 332 56 322Z" fill="url(#cup-kraft)" />
+        <g clip-path="url(#cup-body-clip)">
+          <rect x="0" y="300" width="240" height="40" fill="url(#cup-base)" />
+          <!-- O carimbo repete-se e desliza para simular o copo a rodar -->
+          <g class="cup__label" opacity=".9" style="mix-blend-mode: multiply">
+            <image href="assets/img/brand/carimbo.svg" x="-460" y="146" width="120" height="90" />
+            <image href="assets/img/brand/carimbo.svg" x="-200" y="146" width="120" height="90" />
+            <image href="assets/img/brand/carimbo.svg" x="60" y="146" width="120" height="90" />
+            <image href="assets/img/brand/carimbo.svg" x="320" y="146" width="120" height="90" />
+          </g>
+          <rect x="0" y="0" width="240" height="340" fill="url(#cup-shade)" />
+        </g>
+        <path d="M38 54L46 37Q48 31 56 31H184Q192 31 194 37L202 54Z" fill="url(#cup-lid)" />
+        <path d="M22 60Q22 52 30 52H210Q218 52 218 60V72Q218 80 210 80H30Q22 80 22 72Z" fill="url(#cup-lid)" />
+        <path d="M30 56H210" stroke="#fff" stroke-opacity=".18" stroke-width="2" />
+        <rect x="98" y="36" width="44" height="5" rx="2.5" fill="#000" opacity=".8" />
+      </svg>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página não encontrada · Índico Coffee</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#0b3a2a" />
+    <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" class="visually-hidden" aria-hidden="true">
+      <symbol id="icon-arrow" viewBox="0 0 16 16">
+        <path
+          d="M3 8h10M9 4l4 4-4 4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <a class="logo" href="index.html" aria-label="Índico Coffee, página inicial">
+        <img src="assets/img/brand/logo.svg" alt="Índico Coffee" width="72" height="44" />
+      </a>
+      <a class="btn btn--dark" href="tel:+258849596865">
+        Ligar
+        <span class="btn__icon">
+          <svg><use href="#icon-arrow" /></svg>
+        </span>
+      </a>
+    </header>
+
+    <main class="not-found">
+      <div>
+        <!-- O copo faz de "0" e abana como se alguém lhe tivesse tocado -->
+        <p class="not-found__code" aria-hidden="true">
+          <span>4</span>
+          <span class="not-found__cup">
+            <svg viewBox="0 0 240 340">
+              <defs>
+                <linearGradient id="cup-kraft" x1="0" x2="1">
+                  <stop offset="0" stop-color="#9c7348" />
+                  <stop offset=".22" stop-color="#c99e70" />
+                  <stop offset=".5" stop-color="#d6ad80" />
+                  <stop offset=".8" stop-color="#c4976a" />
+                  <stop offset="1" stop-color="#8f6740" />
+                </linearGradient>
+                <linearGradient id="cup-base" x1="0" x2="1">
+                  <stop offset="0" stop-color="#cfcabe" />
+                  <stop offset=".45" stop-color="#fbf9f4" />
+                  <stop offset="1" stop-color="#bdb8ac" />
+                </linearGradient>
+                <linearGradient id="cup-shade" x1="0" x2="1">
+                  <stop offset="0" stop-color="#2b1a0b" stop-opacity=".35" />
+                  <stop offset=".2" stop-color="#2b1a0b" stop-opacity="0" />
+                  <stop offset=".55" stop-color="#fff" stop-opacity=".1" />
+                  <stop offset=".8" stop-color="#2b1a0b" stop-opacity="0" />
+                  <stop offset="1" stop-color="#2b1a0b" stop-opacity=".4" />
+                </linearGradient>
+                <linearGradient id="cup-lid" x1="0" x2="1">
+                  <stop offset="0" stop-color="#0c0c0b" />
+                  <stop offset=".3" stop-color="#3a3a37" />
+                  <stop offset=".55" stop-color="#1d1d1b" />
+                  <stop offset="1" stop-color="#070707" />
+                </linearGradient>
+                <clipPath id="cup-body-clip">
+                  <path d="M34 76H206L184 322Q183 332 173 332H67Q57 332 56 322Z" />
+                </clipPath>
+              </defs>
+              <path d="M34 76H206L184 322Q183 332 173 332H67Q57 332 56 322Z" fill="url(#cup-kraft)" />
+              <g clip-path="url(#cup-body-clip)">
+                <rect x="0" y="300" width="240" height="40" fill="url(#cup-base)" />
+                <image
+                  href="assets/img/brand/carimbo.svg"
+                  x="60"
+                  y="146"
+                  width="120"
+                  height="90"
+                  opacity=".9"
+                  style="mix-blend-mode: multiply"
+                />
+                <rect x="0" y="0" width="240" height="340" fill="url(#cup-shade)" />
+              </g>
+              <path d="M38 54L46 37Q48 31 56 31H184Q192 31 194 37L202 54Z" fill="url(#cup-lid)" />
+              <path d="M22 60Q22 52 30 52H210Q218 52 218 60V72Q218 80 210 80H30Q22 80 22 72Z" fill="url(#cup-lid)" />
+              <path d="M30 56H210" stroke="#fff" stroke-opacity=".18" stroke-width="2" />
+              <rect x="98" y="36" width="44" height="5" rx="2.5" fill="#000" opacity=".8" />
+            </svg>
+          </span>
+          <span>4</span>
+        </p>
+
+        <div class="not-found__copy">
+          <p class="eyebrow">Erro 404</p>
+          <h1 class="h2">Esta página entornou-se.</h1>
+          <p class="lead">
+            A página que procura não existe ou mudou de sítio. O café, esse, continua onde sempre esteve.
+          </p>
+          <div class="not-found__actions">
+            <a class="btn" href="index.html">
+              Voltar ao início
+              <span class="btn__icon">
+                <svg><use href="#icon-arrow" /></svg>
+              </span>
+            </a>
+            <a class="btn btn--ghost" href="menu.html">
+              Ver o menu
+              <span class="btn__icon">
+                <svg><use href="#icon-arrow" /></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <p class="not-found__credit">Desenvolvido por Eclesio Pembelane</p>
+  </body>
+</html>

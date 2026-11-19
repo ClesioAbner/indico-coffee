@@ -1,0 +1,215 @@
+/* Índico Coffee · Base
+   Reset, tipografia e utilitários. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  color: var(--c-ink);
+  background: var(--c-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+img {
+  height: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+:focus-visible {
+  outline: 3px solid var(--c-lime);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+[id] {
+  scroll-margin-top: calc(var(--header-h) + 40px);
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 300;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--c-lime);
+  color: var(--c-ink);
+  font-weight: 600;
+}
+.skip-link:focus {
+  top: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Tipografia */
+.h1,
+.h2,
+.h3,
+.h-cta {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.h1 {
+  font-size: var(--fs-h1);
+  line-height: 0.96;
+  letter-spacing: -0.01em;
+}
+.h2 {
+  font-size: var(--fs-h2);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+}
+.h3 {
+  font-size: var(--fs-h3);
+  line-height: 1.02;
+}
+.h-cta {
+  font-size: var(--fs-cta);
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+}
+
+.script {
+  display: block;
+  margin-top: 14px;
+  font-family: var(--font-script);
+  font-size: var(--fs-script);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--c-lime);
+  transform: rotate(-6deg);
+  transform-origin: left center;
+  white-space: nowrap;
+}
+
+.lead {
+  margin: 0;
+  max-width: 460px;
+  font-size: var(--fs-lead);
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  color: var(--c-muted);
+}
+.text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--c-muted);
+}
+.small {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--c-muted);
+}
+
+/* Sobretítulo discreto (sem "badge") */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+}
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: currentColor;
+}
+
+/* Contexto escuro */
+.is-dark {
+  color: var(--c-white);
+}
+.is-dark .lead,
+.is-dark .text,
+.is-dark .small {
+  color: rgba(255, 255, 255, 0.78);
+}
+.is-dark .eyebrow {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Títulos com linhas que sobem (animação de entrada).
+   O espaço extra em cima evita que a máscara corte os acentos (É, Á, Í). */
+.line {
+  display: block;
+  overflow: hidden;
+  padding-block: 0.16em 0.04em;
+  margin-block: -0.16em -0.04em;
+}
+.line > span {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* Estado inicial das animações — só quando JS + Motion estão ativos */
+.js .line > span {
+  transform: translateY(105%);
+}
+.js [data-reveal],
+.js [data-script] {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,82 @@
+/* Índico Coffee · Design tokens
+   Cores, tipografia e espaçamento. Escala tipográfica igual ao template
+   Framer de referência.
+
+   Breakpoints (iguais aos do Framer):
+     desktop  ≥ 1200px
+     tablet   810px – 1199px
+     mobile   < 810px */
+
+:root {
+  /* Cores */
+  --c-green: #0b3a2a;
+  --c-green-deep: #071a12;
+  --c-lime: #c8f135;
+  --c-cream: #f6fbdd;
+  --c-ink: #0f1a14;
+  --c-muted: #667066;
+  --c-line: #e3e8d6;
+  --c-surface: #f3f5ee;
+  --c-white: #fff;
+
+  /* Tipografia */
+  --font-display: "Anton", Impact, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-script: "Mrs Saint Delafield", cursive;
+
+  --fs-h1: 88px;
+  --fs-h2: 68px;
+  --fs-h3: 34px;
+  --fs-cta: 120px;
+  --fs-script: 60px;
+  --fs-wordmark: 180px;
+  --fs-lead: 18px;
+
+  /* Espaçamento */
+  --gutter: 32px;
+  --section-y: 120px;
+  --stack: 64px;
+  --max-width: 1440px;
+  --header-h: 64px;
+
+  /* Forma e movimento */
+  --radius: 20px;
+  --radius-lg: 28px;
+  --shadow: 0 18px 40px -18px rgba(7, 26, 18, 0.35);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Camadas */
+  --z-cup: 150;
+  --z-mobile-nav: 190;
+  --z-header: 200;
+}
+
+@media (max-width: 1199px) {
+  :root {
+    --fs-h1: 68px;
+    --fs-h2: 54px;
+    --fs-h3: 30px;
+    --fs-cta: 92px;
+    --fs-script: 50px;
+    --fs-wordmark: 150px;
+    --fs-lead: 17px;
+    --gutter: 24px;
+    --section-y: 96px;
+  }
+}
+
+@media (max-width: 809px) {
+  :root {
+    --fs-h1: 46px;
+    --fs-h2: 40px;
+    --fs-h3: 26px;
+    --fs-cta: 58px;
+    --fs-script: 38px;
+    --fs-wordmark: 120px;
+    --fs-lead: 16px;
+    --gutter: 20px;
+    --section-y: 72px;
+    --stack: 40px;
+    --header-h: 60px;
+  }
+}
