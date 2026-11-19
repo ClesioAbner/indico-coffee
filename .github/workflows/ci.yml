@@ -1,3 +1,6 @@
+# Cada push e pull request verifica o código.
+# A publicação no GitHub Pages só corre à mão: Actions > CI/CD > Run workflow > publicar.
+# Antes da primeira publicação, ativar em Settings > Pages > Source: GitHub Actions.
 name: CI/CD
 
 on:
@@ -5,12 +8,17 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      publicar:
+        description: "Publicar no GitHub Pages"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
 
 concurrency:
-  group: pages-${{ github.ref }}
+  group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -34,14 +42,14 @@ jobs:
       - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: inputs.publicar
         with:
           path: dist
 
   deploy:
     name: Publicar no GitHub Pages
     needs: check
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: inputs.publicar
     runs-on: ubuntu-latest
     permissions:
       pages: write
