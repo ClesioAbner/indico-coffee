@@ -237,7 +237,7 @@
     </div>
 
     <main id="conteudo">
-      <!-- Banner: o copo começa na mão da foto. data-cup-* = posição do copo na imagem; data-cup-mobile = o mesmo na foto vertical (x y altura graus) -->
+      <!-- Banner: no computador, o copo começa na mão da foto (data-cup-* = posição do copo na imagem) -->
       <section class="hero" aria-labelledby="hero-title">
         <picture class="hero__media">
           <source media="(max-width: 809px)" srcset="assets/img/hero-mobile.jpg" width="1170" height="2084" />
@@ -253,7 +253,6 @@
             data-cup-y="697"
             data-cup-h="582"
             data-cup-rot="-9"
-            data-cup-mobile="299 657 485 -5"
           />
         </picture>
         <div class="hero__veil" aria-hidden="true"></div>
@@ -312,7 +311,7 @@
             </div>
           </div>
 
-          <div class="grid-3" data-carousel="Os mais pedidos">
+          <div class="grid-3 product-list">
             <article class="product" data-reveal>
               <div class="product__media">
                 <img
@@ -434,6 +433,8 @@
           <div class="about__panel" data-reveal>
             <span class="about__wordmark" aria-hidden="true">Índico</span>
             <div class="cup-slot" data-cup-rot="-8"></div>
+            <!-- Copo parado para quando o copo animado não existe (telemóvel, movimento reduzido) -->
+            <img class="about__cup" src="assets/img/brand/copo.svg" alt="" width="240" height="340" />
           </div>
           <div class="about__copy">
             <p class="eyebrow" data-reveal>Sobre nós</p>
@@ -519,15 +520,6 @@
                 loading="lazy"
                 width="1600"
                 height="2007"
-              />
-            </div>
-            <div class="pets__detail">
-              <img
-                src="assets/img/cup-flowers-sm.jpg"
-                alt="Chávena de café com flores"
-                loading="lazy"
-                width="800"
-                height="534"
               />
             </div>
             <p class="pets__badge">
@@ -806,7 +798,7 @@
               </span>
             </a>
           </div>
-          <div class="grid-4" data-carousel="Para acompanhar">
+          <div class="grid-4 dish-grid">
             <article class="dish" data-reveal>
               <div class="dish__media">
                 <img src="assets/img/avo-sm.jpg" alt="Tosta de abacate" loading="lazy" width="800" height="530" />
@@ -957,36 +949,36 @@
         </div>
         <div class="gallery" aria-hidden="true">
           <div class="gallery__row">
-            <img src="assets/img/mug-window-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/espresso-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/barista-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/interior-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/croissants-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/pitcher-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/coffee-book-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/mug-window-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/espresso-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/barista-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/interior-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/croissants-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/pitcher-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/coffee-book-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/mug-window-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/espresso-sm.jpg" alt="" loading="lazy" width="800" height="800" />
+            <img src="assets/img/barista-sm.jpg" alt="" loading="lazy" width="800" height="1200" />
+            <img src="assets/img/interior-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/croissants-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/pitcher-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/coffee-book-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/mug-window-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/espresso-sm.jpg" alt="" loading="lazy" width="800" height="800" />
+            <img src="assets/img/barista-sm.jpg" alt="" loading="lazy" width="800" height="1200" />
+            <img src="assets/img/interior-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/croissants-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/pitcher-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/coffee-book-sm.jpg" alt="" loading="lazy" width="800" height="534" />
           </div>
           <div class="gallery__row gallery__row--reverse">
-            <img src="assets/img/beans-dark-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/bar-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/cappuccino-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/interior-warm-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/pourover-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/man-cup-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/iced-coffee-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/beans-dark-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/bar-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/cappuccino-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/interior-warm-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/pourover-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/man-cup-sm.jpg" alt="" loading="lazy" />
-            <img src="assets/img/iced-coffee-sm.jpg" alt="" loading="lazy" />
+            <img src="assets/img/beans-dark-sm.jpg" alt="" loading="lazy" width="800" height="530" />
+            <img src="assets/img/bar-sm.jpg" alt="" loading="lazy" width="800" height="531" />
+            <img src="assets/img/cappuccino-sm.jpg" alt="" loading="lazy" width="800" height="800" />
+            <img src="assets/img/interior-warm-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/pourover-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/man-cup-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/iced-coffee-sm.jpg" alt="" loading="lazy" width="800" height="566" />
+            <img src="assets/img/beans-dark-sm.jpg" alt="" loading="lazy" width="800" height="530" />
+            <img src="assets/img/bar-sm.jpg" alt="" loading="lazy" width="800" height="531" />
+            <img src="assets/img/cappuccino-sm.jpg" alt="" loading="lazy" width="800" height="800" />
+            <img src="assets/img/interior-warm-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/pourover-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/man-cup-sm.jpg" alt="" loading="lazy" width="800" height="534" />
+            <img src="assets/img/iced-coffee-sm.jpg" alt="" loading="lazy" width="800" height="566" />
           </div>
         </div>
       </section>

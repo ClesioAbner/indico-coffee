@@ -1,32 +1,30 @@
 // Carrossel do telemóvel.
-// O CSS faz as grelhas com [data-carousel] deslizar (scroll-snap); aqui acrescentam-se os
-// pontos de navegação, alinhados à esquerda, sincronizados com a posição do scroll.
-(function (App) {
-  "use strict";
+// O CSS faz deslizar as grelhas com [data-carousel] (scroll-snap). Este módulo junta-lhes
+// pontos de navegação, alinhados à esquerda e sincronizados com o scroll.
+// O valor de data-carousel é o nome do carrossel para leitores de ecrã.
+"use strict";
 
-  var MOBILE = window.matchMedia("(max-width: 809px)");
-
-  function setup(track) {
-    var slides = Array.prototype.slice.call(track.children);
+(({ $$, reducedMotion, mobileQuery, ready }) => {
+  // Junta os pontos a uma faixa com dois ou mais cartões
+  function createCarousel(track) {
+    const slides = Array.from(track.children);
     if (slides.length < 2) return;
 
-    var dots = document.createElement("div");
+    const dots = document.createElement("div");
     dots.className = "carousel-dots";
     dots.setAttribute("role", "group");
     dots.setAttribute("aria-label", track.getAttribute("data-carousel") || "Navegação do carrossel");
 
-    // Posição de scroll que alinha um cartão com o início da faixa
-    function slideOffset(slide) {
-      return slide.offsetLeft - track.offsetLeft - parseFloat(getComputedStyle(track).paddingLeft);
-    }
+    // Posição de scroll que alinha o cartão com o início da faixa
+    const offsetOf = (slide) => slide.offsetLeft - track.offsetLeft - parseFloat(getComputedStyle(track).paddingLeft);
 
-    var buttons = slides.map(function (slide, index) {
-      var button = document.createElement("button");
+    const buttons = slides.map((slide, index) => {
+      const button = document.createElement("button");
       button.type = "button";
       button.className = "carousel-dots__dot";
-      button.setAttribute("aria-label", "Mostrar " + (index + 1) + " de " + slides.length);
-      button.addEventListener("click", function () {
-        track.scrollTo({ left: slideOffset(slide), behavior: App.reducedMotion ? "auto" : "smooth" });
+      button.setAttribute("aria-label", `Mostrar ${index + 1} de ${slides.length}`);
+      button.addEventListener("click", () => {
+        track.scrollTo({ left: offsetOf(slide), behavior: reducedMotion ? "auto" : "smooth" });
       });
       dots.appendChild(button);
       return button;
@@ -34,43 +32,30 @@
 
     track.insertAdjacentElement("afterend", dots);
 
-    function update() {
-      var active = 0;
-      var closest = Infinity;
-
-      slides.forEach(function (slide, index) {
-        var distance = Math.abs(slideOffset(slide) - track.scrollLeft);
-        if (distance < closest) {
-          closest = distance;
-          active = index;
-        }
-      });
-
-      buttons.forEach(function (button, index) {
-        button.setAttribute("aria-current", String(index === active));
-      });
+    // Marca o ponto do cartão mais próximo da posição atual
+    function updateActiveDot() {
+      const distances = slides.map((slide) => Math.abs(offsetOf(slide) - track.scrollLeft));
+      const active = distances.indexOf(Math.min(...distances));
+      buttons.forEach((button, index) => button.setAttribute("aria-current", String(index === active)));
     }
 
-    // Um cálculo por frame, no máximo
-    var pending = false;
-    track.addEventListener(
-      "scroll",
-      function () {
-        if (pending) return;
-        pending = true;
-        requestAnimationFrame(function () {
-          pending = false;
-          update();
-        });
-      },
-      { passive: true }
-    );
-
-    MOBILE.addEventListener("change", update);
-    update();
+    track.addEventListener("scroll", throttleToFrame(updateActiveDot), { passive: true });
+    mobileQuery.addEventListener("change", updateActiveDot);
+    updateActiveDot();
   }
 
-  App.ready(function () {
-    App.$$("[data-carousel]").forEach(setup);
-  });
+  // Limita fn a uma execução por frame
+  function throttleToFrame(fn) {
+    let pending = false;
+    return () => {
+      if (pending) return;
+      pending = true;
+      requestAnimationFrame(() => {
+        pending = false;
+        fn();
+      });
+    };
+  }
+
+  ready(() => $$("[data-carousel]").forEach(createCarousel));
 })(window.App);

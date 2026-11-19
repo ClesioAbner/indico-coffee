@@ -4,6 +4,8 @@
   "private": true,
   "description": "Landing page do Índico Coffee (Maputo). Site estático, sem framework.",
   "scripts": {
+    "dev": "http-server . -p 8080 -c-1",
+    "tunnel": "cloudflared tunnel --url http://localhost:8080",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint:js": "eslint .",
@@ -17,9 +19,10 @@
     "eslint": "^10.15.0",
     "globals": "^17.14.0",
     "html-validate": "^11.21.1",
+    "http-server": "^14.1.1",
     "prettier": "^3.10.1"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   }
 }

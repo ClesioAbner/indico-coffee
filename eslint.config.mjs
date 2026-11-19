@@ -7,14 +7,15 @@ export default [
   {
     files: ["assets/js/**/*.js"],
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 2022,
       sourceType: "script",
       globals: { ...globals.browser },
     },
     rules: {
       "no-unused-vars": ["error", { args: "after-used" }],
       eqeqeq: ["error", "smart"],
-      "no-var": "off",
+      "no-var": "error",
+      "prefer-const": "error",
     },
   },
   {

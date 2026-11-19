@@ -12,8 +12,8 @@ window.SITE = {
 
   // Redes sociais: um campo a null esconde o ícone correspondente
   whatsapp: "258849596865", // formato internacional, sem + nem espaços
-  facebook: null, // ex.: "https://www.facebook.com/indicocoffee"
-  instagram: null, // ex.: "indicocoffee" (sem @)
+  facebook: "https://www.facebook.com/indicocoffee", // demonstração: trocar pelo link real
+  instagram: "indicocoffee", // demonstração: trocar pelo nome real (sem @)
   tiktok: null, // ex.: "indicocoffee" (sem @)
 
   hours: null, // ex.: "Todos os dias, 07:00 às 19:00"

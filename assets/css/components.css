@@ -551,13 +551,6 @@
   display: none;
 }
 
-@media (max-width: 809px) {
-  .cup-slot {
-    width: 84px;
-    height: 119px;
-  }
-}
-
 /* Pontos do carrossel (telemóvel). O layout da faixa está em sections.css, junto às grelhas.
    Ficam alinhados à esquerda; o ponto ativo alonga-se. */
 .carousel-dots {
@@ -717,5 +710,53 @@
   }
   .faq-item p {
     padding-right: 0;
+  }
+}
+
+/* Telemóvel: grelhas de cartões sem carrossel
+   .product-list   cartões em lista, com a foto pequena à esquerda
+   .dish-grid      duas colunas compactas (.grid-4 junto, para ganhar à regra de uma coluna) */
+@media (max-width: 809px) {
+  .product-list {
+    gap: 12px;
+  }
+  .product-list .product {
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+  }
+  .product-list .product__media {
+    flex: 0 0 112px;
+    aspect-ratio: 1;
+  }
+  .product-list .product__body {
+    flex: 1;
+    min-width: 0;
+    gap: 4px;
+    padding: 4px 4px 4px 0;
+  }
+  .product-list .h3 {
+    font-size: 22px;
+  }
+  .product-list .product__foot {
+    margin-top: 8px;
+  }
+  .product-list .price {
+    font-size: 20px;
+  }
+
+  .grid-4.dish-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .dish-grid .dish__body {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 12px 6px 8px;
+  }
+  .dish-grid .dish__body h3 {
+    font-size: 18px;
+  }
+  .dish-grid .dish__body .price {
+    font-size: 16px;
   }
 }
