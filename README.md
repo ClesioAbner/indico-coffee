@@ -1,4 +1,3 @@
-
 # Índico Coffee
 
 Landing page de uma cafetaria conceptual inspirada na cultura urbana e no estilo de vida de Maputo, Moçambique.
@@ -53,6 +52,8 @@ Aprofundar conhecimentos em UI/UX Design, melhorar a atenção ao detalhe visual
 
 Eclesio Pembelane
 Software Developer | Frontend Development | UI/UX Design
+
+## Capturas de ecrã
 
 <img width="1910" height="935" alt="Captura de ecrã 2026-11-19 233813" src="https://github.com/user-attachments/assets/c2a9b481-dabe-460c-b474-e4957379eefc" />
 <img width="1904" height="928" alt="Captura de ecrã 2026-11-19 233824" src="https://github.com/user-attachments/assets/feaef349-cd8a-46c5-b949-e5e6e6fba1cd" />

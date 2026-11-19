@@ -2,3 +2,6 @@ assets/js/vendor/
 assets/img/
 dist/
 package-lock.json
+
+# Editado à mão no GitHub: não deve falhar a CI por causa de espaços
+README.md
